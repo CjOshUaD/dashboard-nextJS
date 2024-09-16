@@ -4,7 +4,7 @@ import { fetchInvoiceById, fetchCustomers } from "@/app/lib/data";
 
 export default async function Page({ params }: { params: { id: string } }) {
     const id = params.id;
-    const [invoice, customers] = await Promise.all([
+    const [invoices, customers] = await Promise.all([
         fetchInvoiceById(id),
         fetchCustomers(),
     ]);
@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             },
         ]}
         />
-      <Form invoice = {invoice} customers={customers} />
+      <Form invoice = {invoices} customers={customers} />
     </main>
     );
 }
