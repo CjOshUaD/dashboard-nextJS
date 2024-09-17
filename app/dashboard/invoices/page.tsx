@@ -9,7 +9,7 @@ import { fetchInvoicesPages } from '@/app/lib/data';
 
 export default async function Page({
   searchParams,
-}:{
+}: {
   searchParams?:{
     query?: string;
     page?: string;
