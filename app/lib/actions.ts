@@ -1,8 +1,13 @@
 'use server';
 
+<<<<<<< HEAD
 import { signIn } from '@/auth';
 import { sql } from '@vercel/postgres';
 import { AuthError } from 'next-auth';
+=======
+import { z } from 'zod';
+import { sql } from '@vercel/postgres';
+>>>>>>> 8dd0982d16c09dc3c223bbe28c2010a8aedd52e6
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';
