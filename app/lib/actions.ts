@@ -1,10 +1,10 @@
 'use server';
 import { signIn } from '@/auth';
 import { sql } from '@vercel/postgres';
-import { AuthError } from 'next-auth'
+import { AuthError } from 'next-auth';
+import { z } from 'zod';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
-import { z } from 'zod';
 
 const FormSchema = z.object({
   id: z.string(),
