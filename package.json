@@ -23,7 +23,6 @@
     "react-dom": "19.0.0-rc-e740d4b1-20240919",
     "tailwindcss": "3.4.4",
     "typescript": "5.5.2",
-    "update": "^0.7.4",
     "use-debounce": "^10.0.3",
     "zod": "^3.23.8"
   },
